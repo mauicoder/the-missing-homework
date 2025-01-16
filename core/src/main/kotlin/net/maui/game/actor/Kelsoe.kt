@@ -11,9 +11,9 @@ class Kelsoe(x: Float, y: Float, stage: Stage) : BaseActor(x, y, stage) {
     internal val lookRight: Animation<TextureRegion>
 
     init {
-        normal = loadTexture("assets/kelsoe-normal.png");
-        sad = loadTexture("assets/kelsoe-sad.png");
-        lookLeft = loadTexture("assets/kelsoe-look-left.png");
-        lookRight = loadTexture("assets/kelsoe-look-right.png");
+        normal = loadTexture("assets/kelsoe-normal.png")
+        sad = loadTexture("assets/kelsoe-sad.png")
+        lookLeft = loadTexture("assets/kelsoe-look-left.png")
+        lookRight = loadTexture("assets/kelsoe-look-right.png")
     }
 }

@@ -59,9 +59,9 @@ class StoryScreen(val baseGame: BaseGame) : BaseScreen() {
     }
 
     private fun hallway() {
-        background.setAnimation( background.hallway );
-        dialogBox.setText("");
-        kelsoe.addAction( SceneActions.moveToOutsideLeft(0f) );
+        background.setAnimation( background.hallway )
+        dialogBox.setText("")
+        kelsoe.addAction( SceneActions.moveToOutsideLeft(0f) )
 
         scene.addSegment(SceneSegment(background, Actions.fadeIn(1f)))
         scene.addSegment(SceneSegment(kelsoe, SceneActions.moveToScreenCenter(1f)))
@@ -200,7 +200,7 @@ class StoryScreen(val baseGame: BaseGame) : BaseScreen() {
         classroomButton.addListener { e: Event ->
             if (e !is InputEvent || e.type != InputEvent.Type.touchDown) return@addListener false
             scene.addSegment(SceneSegment(buttonTable, Actions.hide()))
-            addTextSequence( "Maybe someone found it and put it in the classroom. I'll go check." );
+            addTextSequence( "Maybe someone found it and put it in the classroom. I'll go check." )
             scene.addSegment(SceneSegment(dialogBox, Actions.hide()))
             scene.addSegment(SceneSegment(kelsoe, SceneActions.moveToOutsideRight(1f)))
             scene.addSegment(SceneSegment(background, Actions.fadeOut(1f)))
@@ -254,7 +254,7 @@ class StoryScreen(val baseGame: BaseGame) : BaseScreen() {
 
     override fun keyDown(keycode: Int): Boolean {
         if ( keycode == Input.Keys.C )
-            scene.loadNextSegment();
+            scene.loadNextSegment()
         return false
     }
 

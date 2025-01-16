@@ -11,11 +11,11 @@ class Background(x: Float, y: Float, stage: Stage) : BaseActor(x, y, stage) {
     val library: Animation<TextureRegion>
 
     init {
-        hallway = loadTexture("assets/bg-hallway.jpg");
-        classroom = loadTexture("assets/bg-classroom.jpg");
-        scienceLab = loadTexture("assets/bg-science-lab.jpg");
-        library = loadTexture("assets/bg-library.jpg");
-        setSize(800f,600f);
+        hallway = loadTexture("assets/bg-hallway.jpg")
+        classroom = loadTexture("assets/bg-classroom.jpg")
+        scienceLab = loadTexture("assets/bg-science-lab.jpg")
+        library = loadTexture("assets/bg-library.jpg")
+        setSize(800f,600f)
     }
 
 }

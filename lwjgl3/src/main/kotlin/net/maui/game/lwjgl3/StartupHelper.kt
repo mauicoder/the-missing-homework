@@ -21,6 +21,7 @@ import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
 import java.lang.management.ManagementFactory
+import java.nio.file.FileSystems
 import java.util.*
 
 /**
@@ -100,7 +101,7 @@ class StartupHelper private constructor() {
 
             // Restart the JVM with -XstartOnFirstThread
             val jvmArgs = ArrayList<String?>()
-            val separator = System.getProperty("file.separator")
+            val separator = FileSystems.getDefault().separator
             // The following line is used assuming you target Java 8, the minimum for LWJGL3.
             val javaExecPath = System.getProperty("java.home") + separator + "bin" + separator + "java"
             // If targeting Java 9 or higher, you could use the following instead of the above line:

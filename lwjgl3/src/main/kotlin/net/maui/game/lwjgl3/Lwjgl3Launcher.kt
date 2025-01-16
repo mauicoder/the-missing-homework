@@ -13,7 +13,7 @@ fun main() {
       return
     Lwjgl3Application(HomeWork(), Lwjgl3ApplicationConfiguration().apply {
         setTitle("The Missing Homework")
-        setWindowedMode(640, 480)
+        setWindowedMode(800, 600)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }
